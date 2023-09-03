@@ -1,3 +1,41 @@
-h3 {
-  color: green;
+/* Variables to be used as default styles*/
+:root {
+  --background-color: #fefefe;
+  --color: #242424;
+}
+
+body {
+  margin: 0;
+}
+
+.container, .branding, .form-container {
+  display: flex;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+}
+
+.branding, .form-container {
+  flex-direction: column;
+}
+
+.branding {
+  width: clamp(150px, 35%, 360px);
+  background-image: url("../assets/sample.jpg");
+}
+
+.form-container {
+  width: 100%;
+  background-color: beige;
+}
+
+.form-container > div {
+  height: 33%;
+}
+
+.content {
+  background-color: red;
+  height: 33%;
 }
