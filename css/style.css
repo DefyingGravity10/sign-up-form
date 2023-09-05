@@ -138,6 +138,7 @@ h6 {
   .form-container > div {
     padding: 36px;
     padding-bottom: 0;
+  }
 
   div.content {
     padding-top: 48px;
@@ -153,3 +154,5 @@ h6 {
     display: none;
   }
 }
+
+/* For smaller screen sizes but on mobile */
