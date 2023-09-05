@@ -2,7 +2,8 @@
 :root {
   --background-color: #1f393f;
   --font-color: #fefefe;
-  --color2: #90cbd9;
+  --secondary-color: #2594a8;
+  font-size: 16px;
 }
 
 body {
@@ -35,29 +36,91 @@ body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-weight: 400;
   color: var(--font-color);
+  background-color: var(--background-color);
+  justify-content: center;
 }
 
 .form-container > div {
   background-color: var(--background-color);
   padding: 42px;
-}
-
-.header {
-  height: 20%;
+  padding-bottom: 0;
 }
 
 div.content {
-  height: 50%;
+  padding-top: 60px;
 }
 
-.footer {
-  height: 30%;
+div.footer {
+  padding-top: 50px;
 }
 
 h3 {
   font-size: 2.2rem;
   font-weight: 600;
   margin: 0;
+}
+
+fieldset {
+  padding: 20px;
+  padding-right: 0;
+  border-color: var(--font-color);
+}
+
+.info-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.info {
+  display: flex;
+  width: clamp(260px, 50%, 440px);
+  padding-bottom: 10px;
+}
+
+input {
+  margin-left: auto;
+  margin-right: 20px;
+  width: clamp(100px, 55%, 250px);
+}
+
+label {
+  font-size: 1.05rem;
+}
+
+button {
+  border: inherit;
+  font-family: inherit;
+
+  background-color: var(--secondary-color);
+  padding: 10px 30px;
+  border: solid 3px var(--secondary-color);
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--font-color);
+}
+
+button:hover {
+  border: double 3px var(--font-color)
+}
+
+button:active {
+  background-color: #1f7c8c;
+  border: double 3px var(--font-color)
+}
+
+h6 {
+  margin-top: 20px;
+  font-weight: 400;
+  font-size: 0.75rem;
+}
+
+.emphasis {
+  font-weight: 500;
+  color: #7fc5d4;
+  text-decoration: none;
 }
 
 /* For smaller screen sizes but on desktop */
