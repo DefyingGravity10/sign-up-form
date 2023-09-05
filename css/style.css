@@ -156,3 +156,8 @@ h6 {
 }
 
 /* For smaller screen sizes but on mobile */
+@media (hover: none) {
+  .branding {
+    display: none;
+  }
+}
