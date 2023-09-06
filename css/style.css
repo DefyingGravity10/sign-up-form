@@ -84,6 +84,7 @@ input {
   margin-left: auto;
   margin-right: 20px;
   width: clamp(100px, 55%, 250px);
+  border: 2px solid var(--font-color);
 }
 
 label {
